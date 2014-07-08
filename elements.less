@@ -154,3 +154,30 @@
   -webkit-background-clip: @argument;
   background-clip: @argument;
 }
+
+
+.placeholder(@color, @bgcolor: inherit, @fontStyle: italic ) {
+    &::-webkit-input-placeholder {
+       color: @color;
+       background-color: @bgcolor;
+       font-style: @fontStyle;
+    }
+
+    &:-moz-placeholder {
+       color: @color;
+       background-color: @bgcolor;
+       font-style: @fontStyle;
+    }
+
+    &::-moz-placeholder {
+       color: @color;
+       background-color: @bgcolor;
+       font-style: @fontStyle;
+    }
+
+    &:-ms-input-placeholder {  
+       color: @color;
+       background-color: @bgcolor;
+       font-style: @fontStyle;
+    }
+}
